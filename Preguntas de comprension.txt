@@ -1,0 +1,27 @@
+PREGUNTAS DE COMPRESIÓN
+¿Qué es una variable global y cómo se utiliza en el programa del cajero automático?
+Es una variable que se declara fuera de todas las funciones, por lo que puede ser utilizada y modificada por cualquier función del programa.
+En el caso del cajero automático: int saldo = 0, esta variable almacena el saldo de la cuenta y es utilizada por las funciones depositar (), retirar() y mostrasSaldo()
+para actualizar o mostrar el mismo valor sin necesidad de pasarla como parámetro.
+
+¿Cuál es la diferencia entre pasar un parámetro por valor y por referencia?
+- Paso por valor: La función recibe una copia de la variable. Los cambios realizados dentro de la función no afectan a la variable original.
+- Paso por referencia: La función recibe una referencia a la variable original. Cualquier modificación realizada dentro de la función sí cambia el valor de la variable
+original.
+
+¿Qué función matemática usaría para redondear un número al entero más cercano y cómo se utiliza?
+La función round() de la biblioteca <cmath>. Ej:
+#include <cmath>
+
+double numero = 5.7;
+cout << round(numero);
+
+La salida sería 6.
+La función round() devuelve el entero más cercano al número recibido.
+
+¿Cuál es la ventaja de utilizar archivos de cabecera (.h) en proyectos de C++?
+Permiten organizar y modularizar el código, separando las declaraciones de las funciones de sus implementaciones. Entre sus ventajas puedo destacar:
+- Facilitan la reutilización de código.
+- Mejoran la organización del proyecto.
+- Hacen el programa más fácil de mantener y modificar.
+- Permiten dividir el trabajo entre varios programadores.
